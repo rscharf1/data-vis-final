@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Visualization Proposal</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Team Todd: Project Proposal</h1>
+    <hr>
+
+    <div id="writeup" class="container">
+        <h5>Basic Info</h5>
+            <ul>
+                <li>Title: Team Todd</li>
+                <li>Russell Scharf, rscharf@wustl.edu</li>
+                <li>Marissa Kalkar, mkalkar@wustl.edu</li>
+                <li>Bo Anderson, boanderson@wustl.edu</li>
+                <li><a href="https://github.com/rscharf1/data-vis-final">Repo link</a></li>
+            </ul>
+        <hr>
+        <h5>Background and Motivation</h5>
+            <p>
+                Cancer, a diverse class of diseases, is typically characterized by uncontrollable cell growth. This simplification is often misleading, as in reality the disease is extremely complex and is responsible for nearly a sixth of deaths worldwide (Bray). Roughly 1 in 2 men and 1 in 3 women will themselves develop cancer over the course of their lives, and it goes without saying that nearly everyone in the world will be touched by cancer in some capacity throughout their lifetime. <br><br>
+                Despite its massive prevalence and enormous research effort, the age adjusted mortality* rate for cancer patients has remained stagnant since 1930 (Azra Raza). This means that in over 90 years, the life expectancy of cancer patients has remained largely unchanged. Despite frequent news of “breakthroughs in treatment” and “game changing discoveries”, the cancer treatment complex composed of clinicians, researchers, and pharmaceutical companies remains largely stumped in combatting and curing cancer. Massive amounts of funding and resources are allocated towards cancer research each year but the return on investment remains unfathomably low. <br><br>
+
+                *age adjusted mortality: controls for the effects of differences in population age distributions
+            </p>
+        <hr>
+        <h5>Project Objectives</h5>
+            <p>
+                It seems impossible that with many of the greatest minds in the world devoting their lives to this cause we continue to come up short and fail patient after patient. Team Todd would like to visualize for themselves mankind’s progress, or the unfortunate lack of, in the war against cancer. In general, this means conveying to viewers information regarding cancer survival rates over time. Below is a list of variables that will play a role in making our visualization effective:
+                <ul>
+                    <li>Length of survival</li>
+                    <li>Geographical region</li>
+                    <li>Demographic</li>
+                    <li>Stage caught</li>
+                    <li>Treatments</li>
+                </ul>
+
+                We hope that our visualization helps viewers to gain a grasp regarding how cancer affects different groups of people in different parts of the world. There are also several other interesting and important messages that we might surprise ourselves with by this project. For example, maybe we can see evidence for drastic healthcare inequality that exists in some parts of the world versus others. 
+            </p>
+        <hr>
+        <h5>Data</h5>
+            <p>
+                The Centers for Disease Control and Prevention (CDC) have set up databases that “researchers can access and analyze high-quality population-based cancer incidence data on the entire United States population. De-identified cancer incidence data are available to researchers for free in public use databases.” (CDC). The data available to the public include cancer incidence and population data for all 50 states, the District of Columbia, and Puerto Rico, providing information on more than 31 million cancer cases. <br><br>
+                The databases include data by demographic characteristics (for example, age, sex, and race) and tumor characteristics (for example, year of diagnosis, primary tumor site, histology, behavior, and stage at diagnosis). (United States Cancer Statistics). The current data comes from the 2020 National Program of Cancer Registries (NPCR) and Surveillance, Epidemiology, and End Results (SEER) program submissions, which include cancer cases diagnosed from January 1, 2001 through December 31, 2018. The data is accessible through the SEERStat software. <br><br>
+                Our team has been approved to access the data and download the SEERStat software required to do so. The data we have downloaded thus far consists of over 5 million cases of cancer, each with over 200 variables that describe each case (age, race, cancer site, treatment, etc.). 
+            </p>
+        <hr>
+        <h5>Data Processing</h5>
+            <p>
+                Data Processing will be key to pulling the data that is needed for our visualization. We will have to clean the data to derive various geographical regions, demographics, stages, and potential treatments. As mentioned earlier, the databases (United States Cancer Statistics) include demographic characteristics and tumor characteristics. This will help us achieve our display of demographics and stages within our visual. Additionally, the CDC data (CDC) includes the geographical regions and cancer data associated with them. <br><br>
+                This will require a pretty substantial amount of data cleanup. We will put all of this data into csv files. It would be useful to sort our data by what visual they will be displayed in. For example, we will create a csv file for geographical data that can be used for our cancer by geography visual. The hard work that goes into data cleaning will make the actual visualization creation a much smoother process. <br><br>
+                With over 250 variables to choose from, it is important to decipher which variables are useful for our purposes and which are not, This way, we can retain only those handful of variables that we plan to use and significantly reduce the size of our dataset, allowing our visualization to react quicker and smoother to the user’s requests. <br><br>
+            </p>
+        <hr>
+        <h5>Visualization Design</h5>
+            <div class="row">
+                <div class="col-sm">
+                    Design #1
+                    <img src="images/marissa.png">
+                    <ul>
+                        <li>Dots will appear on the map with the total number of cases and display a visual of cancer cases by state (might be by color instead of dots to show number of cancer cases).</li>
+                        <li>You can toggle through the dates to look through trends.</li>
+                        <li>See demographics for cancer cases within the specified year.</li>
+                        <li>View types and what percentage of total.</li>
+                        <li>On click of type view the stage caught, treatment options, expectancy at average stage caught.</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-sm">
+                    Design #2
+                    <img src="images/russ.png">
+                    <ul>
+                        <li>The visualization loads with a human figure in the center of the screen that which the user can click on a specific organ of interest.</li>
+                        <li>Upon clicking on an organ, several plots appear surrounding the figure that describe different aspects of the cancer of that organ in particular. </li>
+                        <li>If the user clicks a new organ, the plots will update to show the correct information.</li>
+                        <li>Plot 1 shows the prevalence of the selected cancer type around the United States (or world) in the form of a heat map.</li>
+                        <li>Plot 2 shows a variety of popular treatment options and their corresponding average survival rates.</li>
+                        <li>Plot 3 shows how survival rates have changed over time.</li>
+                        <li>Plot 4 shows the prevalence of the selected cancer type in comparison to other cancers.</li>
+                        <li>Plot 5 displays survival times divided among race, potentially showing meaningful disparity.</li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    Design #3
+                    <img src="images/bo.png">
+                    <ul>
+                        <li>The webpage will load and default to a random cancer, and it will highlight the body part as well. Upon hovering over each body part, an html tool tip will provide the name of the hovered body part.</li>
+                        <li>Each time a new body part is selected, the graphs/charts surrounding the body will update.</li>
+                        <li>Treatments: This will display text of the top 3-5 treatment methods based on popularity.</li>
+                        <li>Geographical Location: This pie chart will show off the percentage of the total that each location accounts for in the selected cancer type.</li>
+                        <li>Demographic: Shows circles with name of each inside, size of circle proportional to number of individuals represented in each.</li>
+                        <li>Stage Caught: Roman Numerals represent stage caught, size of each proportional to number of individuals represented in each stage.</li>
+                        <li>Survival Rate: Timeline from 2001 to 2018 to show how trends have fluctuated.</li>
+                    </ul>
+                </div>
+            </div>
+        <hr>
+        <h5>Must-Have Features</h5>
+            <p>
+                In order to create the interactive, informative visualization elements, we will need to include the following features: <br>
+                <ul>
+                    <li>Allow the user to choose a cancer type to tailor visualizations to</li>
+                    <li>Event handling (mouse hover, click, selected elements)</li>
+                    <li>SVG (charts, images, shapes, attributes)</li>
+                </ul>
+            </p>
+        <hr>
+        <h5>Optional Features</h5>
+            <p>
+                In creating this visualization, here are a few features that we can include to give the webpage more usability: <br>
+                <ul>
+                    <li>Select multiple cancer types to compare to each other</li>
+                    <li>Zoom behavior (on graphs that spawn)</li>
+                    <li>Geo Mapping (GeoJSON)</li>
+                    <li>Brushing with D3</li>
+                </ul>
+            </p>
+        <hr>
+        <h5>Project Schedule</h5>
+            <p>
+                <b>Tasks for 11/1-11/8</b>
+                <ul>
+                    <li>Goal: Sort data in ways that will allow for easy creation of plots in sketch and get prototype in place even if it’s not interactive </li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 11/8-11/15</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 11/15-11/22</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 11/22-11/29</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 11/29-12/6</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 12/6-12/13</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+                <b>Tasks for 12/13-12/20</b>
+                <ul>
+                    <li>Goal:</li>
+                    <li>Marissa</li>
+                    <li>Bo</li>
+                    <li>Russell</li>
+                </ul>
+            </p>
+        <hr>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

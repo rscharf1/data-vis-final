@@ -1,0 +1,13 @@
+body {
+    padding: 40px 55px; 
+    width: 80%;
+}
+
+.col-sm {
+    border: 1px solid black
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

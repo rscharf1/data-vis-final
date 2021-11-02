@@ -27,8 +27,8 @@
         <hr>
         <h5>Background and Motivation</h5>
             <p>
-                Cancer, a diverse class of diseases, is typically characterized by uncontrollable cell growth. This simplification is often misleading, as in reality the disease is extremely complex and is responsible for nearly a sixth of deaths worldwide (Bray). Roughly 1 in 2 men and 1 in 3 women will themselves develop cancer over the course of their lives, and it goes without saying that nearly everyone in the world will be touched by cancer in some capacity throughout their lifetime. <br><br>
-                Despite its massive prevalence and enormous research effort, the age adjusted mortality* rate for cancer patients has remained stagnant since 1930 (Azra Raza). This means that in over 90 years, the life expectancy of cancer patients has remained largely unchanged. Despite frequent news of “breakthroughs in treatment” and “game changing discoveries”, the cancer treatment complex composed of clinicians, researchers, and pharmaceutical companies remains largely stumped in combatting and curing cancer. Massive amounts of funding and resources are allocated towards cancer research each year but the return on investment remains unfathomably low. <br><br>
+                Cancer, a diverse class of diseases, is typically characterized by uncontrollable cell growth. This simplification is often misleading, as in reality the disease is extremely complex and is responsible for nearly a sixth of deaths worldwide (<a href="https://acsjournals.onlinelibrary.wiley.com/doi/full/10.3322/caac.21492">Bray</a>). Roughly 1 in 2 men and 1 in 3 women will themselves develop cancer over the course of their lives, and it goes without saying that nearly everyone in the world will be touched by cancer in some capacity throughout their lifetime. <br><br>
+                Despite its massive prevalence and enormous research effort, the age adjusted mortality* rate for cancer patients has remained stagnant since 1930 (<a href="https://podcasts.google.com/feed/aHR0cHM6Ly9wZXRlcmF0dGlhZHJpdmUubGlic3luLmNvbS9yc3M/episode/OTZmM2QyNWMtOGU5YS00Y2UxLWE2ODQtMTA0YWYyYTJkYzdh?hl=en-GB&ved=2ahUKEwjkn9XR1sntAhVSU98KHQFyDVIQjrkEegQIBxAF&ep=6">Azra Raza</a>). This means that in over 90 years, the life expectancy of cancer patients has remained largely unchanged. Despite frequent news of “breakthroughs in treatment” and “game changing discoveries”, the cancer treatment complex composed of clinicians, researchers, and pharmaceutical companies remains largely stumped in combatting and curing cancer. Massive amounts of funding and resources are allocated towards cancer research each year but the return on investment remains unfathomably low. <br><br>
 
                 *age adjusted mortality: controls for the effects of differences in population age distributions
             </p>
@@ -44,21 +44,21 @@
                     <li>Treatments</li>
                 </ul>
 
-                We hope that our visualization helps viewers to gain a grasp regarding how cancer affects different groups of people in different parts of the world. There are also several other interesting and important messages that we might surprise ourselves with by this project. For example, maybe we can see evidence for drastic healthcare inequality that exists in some parts of the world versus others. 
+                We hope that our visualization helps viewers to gain a grasp regarding how cancer affects different groups of people in different parts of the world or different parts of the United States. There also might be several other interesting and important points that we might surprise ourselves with through putting together this visualization. For example, maybe we can see evidence for drastic healthcare inequality that exists in some parts of the world versus others and how this impacts patient outcomes. 
             </p>
         <hr>
         <h5>Data</h5>
             <p>
-                The Centers for Disease Control and Prevention (CDC) have set up databases that “researchers can access and analyze high-quality population-based cancer incidence data on the entire United States population. De-identified cancer incidence data are available to researchers for free in public use databases.” (CDC). The data available to the public include cancer incidence and population data for all 50 states, the District of Columbia, and Puerto Rico, providing information on more than 31 million cancer cases. <br><br>
-                The databases include data by demographic characteristics (for example, age, sex, and race) and tumor characteristics (for example, year of diagnosis, primary tumor site, histology, behavior, and stage at diagnosis). (United States Cancer Statistics). The current data comes from the 2020 National Program of Cancer Registries (NPCR) and Surveillance, Epidemiology, and End Results (SEER) program submissions, which include cancer cases diagnosed from January 1, 2001 through December 31, 2018. The data is accessible through the SEERStat software. <br><br>
+                The Centers for Disease Control and Prevention (CDC) have set up databases that “researchers can access and analyze high-quality population-based cancer incidence data on the entire United States population. De-identified cancer incidence data are available to researchers for free in public use databases.” (<a href="https://www.cdc.gov/cancer/dcpc/data/index.htm">CDC</a>). The data available to the public include cancer incidence and population data for all 50 states, the District of Columbia, and Puerto Rico, providing information on more than 31 million cancer cases. <br><br>
+                The databases include data by demographic characteristics (for example, age, sex, and race) and tumor characteristics (for example, year of diagnosis, primary tumor site, histology, behavior, and stage at diagnosis). (<a href="https://www.cdc.gov/cancer/uscs/public-use/about.htm">United States Cancer Statistics</a>). The current data comes from the 2020 National Program of Cancer Registries (NPCR) and Surveillance, Epidemiology, and End Results (SEER) program submissions, which include cancer cases diagnosed from January 1, 2001 through December 31, 2018. The data is accessible through the SEERStat software. <br><br>
                 Our team has been approved to access the data and download the SEERStat software required to do so. The data we have downloaded thus far consists of over 5 million cases of cancer, each with over 200 variables that describe each case (age, race, cancer site, treatment, etc.). 
             </p>
         <hr>
         <h5>Data Processing</h5>
             <p>
-                Data Processing will be key to pulling the data that is needed for our visualization. We will have to clean the data to derive various geographical regions, demographics, stages, and potential treatments. As mentioned earlier, the databases (United States Cancer Statistics) include demographic characteristics and tumor characteristics. This will help us achieve our display of demographics and stages within our visual. Additionally, the CDC data (CDC) includes the geographical regions and cancer data associated with them. <br><br>
+                Data Processing will be key to pulling the data that is needed for our visualization. We will have to clean the data to derive various geographical regions, demographics, stages, and potential treatments. As mentioned earlier, the databases (<a href="https://www.cdc.gov/cancer/uscs/public-use/about.htm">United States Cancer Statistics</a>) include demographic characteristics and tumor characteristics. This will help us achieve our display of demographics and stages within our visual. Additionally, the CDC data includes the geographical regions and cancer data associated with them. <br><br>
                 This will require a pretty substantial amount of data cleanup. We will put all of this data into csv files. It would be useful to sort our data by what visual they will be displayed in. For example, we will create a csv file for geographical data that can be used for our cancer by geography visual. The hard work that goes into data cleaning will make the actual visualization creation a much smoother process. <br><br>
-                With over 250 variables to choose from, it is important to decipher which variables are useful for our purposes and which are not, This way, we can retain only those handful of variables that we plan to use and significantly reduce the size of our dataset, allowing our visualization to react quicker and smoother to the user’s requests. <br><br>
+                With over 250 variables to choose from, it is important to decipher which variables are useful for our purposes and which are not, This way, we can retain only those handful of variables that we plan to use and significantly reduce the size of our dataset, allowing our visualization to react quicker and smoother to the user’s requests. It is important to note that the raw, untouched data from SEERStat is a file that is over 4 gigabytes in size. This is quite large and would cause slow runtimes if it was filtered each time the visuals were altered. Therefore, it is important that we do all possible data processing beforehand to reduce the size of the files that D3 will be pulling from.<br><br>
             </p>
         <hr>
         <h5>Visualization Design</h5>
@@ -111,6 +111,8 @@
                 In order to create the interactive, informative visualization elements, we will need to include the following features: <br>
                 <ul>
                     <li>Allow the user to choose a cancer type to tailor visualizations to</li>
+                    <li>Show how survival rates have changed over a span of years</li>
+                    <li>Show how different groups of people are affeced by the selected cancer type</li>
                     <li>Event handling (mouse hover, click, selected elements)</li>
                     <li>SVG (charts, images, shapes, attributes)</li>
                 </ul>
@@ -124,6 +126,7 @@
                     <li>Zoom behavior (on graphs that spawn)</li>
                     <li>Geo Mapping (GeoJSON)</li>
                     <li>Brushing with D3</li>
+                    <li>Fancy transitions when the data is changed from one cancer type to another</li>
                 </ul>
             </p>
         <hr>

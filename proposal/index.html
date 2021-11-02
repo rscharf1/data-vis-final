@@ -59,6 +59,7 @@
                 Data Processing will be key to pulling the data that is needed for our visualization. We will have to clean the data to derive various geographical regions, demographics, stages, and potential treatments. As mentioned earlier, the databases (<a href="https://www.cdc.gov/cancer/uscs/public-use/about.htm">United States Cancer Statistics</a>) include demographic characteristics and tumor characteristics. This will help us achieve our display of demographics and stages within our visual. Additionally, the CDC data includes the geographical regions and cancer data associated with them. <br><br>
                 This will require a pretty substantial amount of data cleanup. We will put all of this data into csv files. It would be useful to sort our data by what visual they will be displayed in. For example, we will create a csv file for geographical data that can be used for our cancer by geography visual. The hard work that goes into data cleaning will make the actual visualization creation a much smoother process. <br><br>
                 With over 250 variables to choose from, it is important to decipher which variables are useful for our purposes and which are not, This way, we can retain only those handful of variables that we plan to use and significantly reduce the size of our dataset, allowing our visualization to react quicker and smoother to the user’s requests. It is important to note that the raw, untouched data from SEERStat is a file that is over 4 gigabytes in size. This is quite large and would cause slow runtimes if it was filtered each time the visuals were altered. Therefore, it is important that we do all possible data processing beforehand to reduce the size of the files that D3 will be pulling from.<br><br>
+                We will use a combination of python, javascript, and unix scripts to process and filter our data. 
             </p>
         <hr>
         <h5>Visualization Design</h5>
@@ -105,6 +106,19 @@
             </div>
         <h5>Final Sketch</h5>
             <img src="images/final_sketch.png">
+            <p>
+                This final sketch incorporates the best features from each of the three designs above. We believe there is a nice variety of visualization techniques being used that are asthetically appealing and useful. An important part of our visualization is that the user has some discretion over the data being shown. To this end, a sliding bar at the top will allow the user to control what year data is being shown from.<br><br>
+                Below is a list of what each of our figures are showing:
+                <ul>
+                    <li>User slides the bar at the top of the screen to choose which year data shown is from.</li>
+                    <li>The human figure in center allows user to click on an organ of interest. This triggers the surrouding plots to update.</li>
+                    <li>The heatmap of the United States shows where the new cases of the selected type of cancer are coming from.</li>
+                    <li>The demographics bar shows what populations of people are acquiring this kind of cancer relative to the other groups.</li>
+                    <li>The line graph shows how trends in survival have changed over time. Hopefully, we see most cancer types exhibit an increase in survival over the years.</li>
+                    <li>The roman numerals represent the proportion of cases caught at each stage. With improving techniques of early cancer detection, we would expect to see more cancers being caught sooner rather than later.</li>
+                    <li>The treatments section lists the 3 most popular treatments for the selected cancer type. The bar graph below will compare survival rates between these treatments.</li>
+                </ul>
+            </p>
         <hr>
         <h5>Must-Have Features</h5>
             <p>
@@ -123,6 +137,7 @@
                 In creating this visualization, here are a few features that we can include to give the webpage more usability: <br>
                 <ul>
                     <li>Select multiple cancer types to compare to each other</li>
+                    <li>Show how survival time of particular treatments has changed over time. For example, maybe radical mastectomy for breast cancer has improved as an operation that can be seen through breast cancer survival over time in patients that have gotten this treatment.</li>
                     <li>Zoom behavior (on graphs that spawn)</li>
                     <li>Geo Mapping (GeoJSON)</li>
                     <li>Brushing with D3</li>
@@ -142,7 +157,7 @@
                 </ul>
                 <b>Tasks for 11/8-11/15</b>
                 <ul>
-                    <li>Goal: Improve asthetics of visualizations after Milestone 1.</li>
+                    <b><li>Goal: Improve asthetics of visualizations after Milestone 1. Bring pieces together to create a unified interactive experience among the multiple visualizations.</li></b>
                     <li>Marissa: Heatmap and demographics</li>
                     <li>Bo: Slide bar, survival over time, tool-tip on hover over body</li>
                     <li>Russell: Stage caught, treatments, survival bar graph</li>
@@ -157,27 +172,27 @@
                 </ul>
                 <b>Tasks for 11/22-11/29</b>
                 <ul>
-                    <b><li>Goal: Start creating presentation</li></b>
-                    <li>Marissa</li>
-                    <li>Bo</li>
-                    <li>Russell</li>
+                    <b><li>Goal: Start creating presentation, use critiques from in-class user study to re-think areas in need of improvement.</li></b>
+                    <li>Marissa: Focus on ways can improve color, typography, font sizes, etc.</li>
+                    <li>Bo: Focus on ways to enhance user experience (more interactive elements, more automated elements, etc)</li>
+                    <li>Russell: Clean up any necessary attributes and continue organizing process book</li>
                     <li>Other: In-class user study</li>
                 </ul>
                 <b>Tasks for 11/29-12/6</b>
                 <ul>
-                    <b><li>Goal: Plan and implement changes based on results of in-class user study</li></b>
+                    <b><li>Goal: Clean-up, enhance visuals, prepare for presentation of project</li></b>
                 </ul>
                 <b>Tasks for 12/6-12/13</b>
                 <ul>
-                    <b><li>Goal:</li></b>
-                    <li>Marissa</li>
-                    <li>Bo</li>
-                    <li>Russell</li>
+                    <b><li>Goal: Present project, gather feedback from peers afterwards. </li></b>
+                    <li>Team: Meet and review all information/feedback received. Also, upon presenting, if there are any holes in our project or issues we need to fix, then we will attend to these problems throughout this week.</li>
                     <li>Other: Presentations on 12/7 and 12/9</li>
                 </ul>
                 <b>Tasks for 12/13-12/20</b>
                 <ul>
                     <b><li>Goal: Tie up any loose ends and submit project. Complete peer evaluations.</li></b>
+                    <li>Team: Gather all materials, finalize README and process book, HTML Validator. We will finalize all of our changes and make sure that we keep note of them as we go. We will check the HTML Validator and make sure that all of the necessary information is included in our process book and the README.</li>
+                    <li>Other: Submit final project on 12/20</li>
                 </ul>
             </p>
         <hr>
